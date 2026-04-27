@@ -1,0 +1,119 @@
+/* ===================================================================
+   ESTILOS DE GEOJSON BASEADOS EM TIPO
+   =================================================================== */
+
+/* --- POLÍGONOS (Floor e Salas) --- */
+/* A renderização SVG do Leaflet permite usar propriedades de preenchimento e contorno diretamente. */
+
+.geo-floor {
+    fill: #ffffff;
+    fill-opacity: 0.8;
+    stroke: #94a3b8;
+    stroke-width: 2;
+    stroke-opacity: 1;
+}
+
+.geo-sala {
+    fill: #d1fae5;
+    fill-opacity: 0.6;
+    stroke: #34d399;
+    stroke-width: 1;
+    stroke-opacity: 1;
+    transition: fill-opacity 0.2s ease, stroke-width 0.2s ease;
+}
+
+.geo-sala:hover {
+    fill-opacity: 0.8;
+    stroke-width: 2;
+}
+
+/* 
+ * COMO CUSTOMIZAR UM POLÍGONO BASEADO NO TIPO DO GEOJSON:
+ * Se o geojson tem `properties: { tipo: "laboratorio" }`, a classe gerada será `.geo-tipo-laboratorio`
+ * Basta adicionar o CSS abaixo para mudar a cor, borda ou transparência.
+ */
+.geo-polygon.geo-tipo-laboratorio {
+    fill: #bfdbfe;
+    stroke: #60a5fa;
+}
+
+.geo-polygon.geo-tipo-auditorio {
+    fill: #fef08a;
+    stroke: #eab308;
+}
+
+
+/* --- PONTOS (Ícones) --- */
+/* Formato base para os ícones */
+.geo-point {
+    background-color: #5a5a5a;
+    color: white;
+    border-radius: 50% 50% 50% 0;
+    border: 2px solid #ffffff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+    transform: rotate(-45deg);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: transform 0.2s ease-in-out;
+}
+
+.geo-point .icon-content {
+    transform: rotate(45deg);
+    font-size: 16px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.geo-point:hover {
+    transform: rotate(-45deg) scale(1.15);
+}
+
+/* Ícones padrão usando FontAwesome (Mude \f3c5 pelo código do icone desejado) */
+.geo-point .icon-content::before {
+    font-family: "Font Awesome 6 Free";
+    font-weight: 900;
+    content: "\f3c5"; /* Ícone de mapa padrão (location-dot) */
+}
+
+/* 
+ * COMO CUSTOMIZAR UM PONTO BASEADO NO TIPO DO GEOJSON:
+ * Altere a cor do 'background-color' e o ícone alterando o 'content'.
+ */
+
+/* Tipo: Escada / Stairs */
+.geo-point.geo-tipo-escada,
+.geo-point.geo-tipo-stairs {
+    background-color: #f87171;
+}
+.geo-point.geo-tipo-escada .icon-content::before,
+.geo-point.geo-tipo-stairs .icon-content::before {
+    content: "\e55e"; /* Ícone de escada */
+}
+
+/* Tipo: Elevador / Elevator */
+.geo-point.geo-tipo-elevador,
+.geo-point.geo-tipo-elevator {
+    background-color: #60a5fa;
+}
+.geo-point.geo-tipo-elevador .icon-content::before,
+.geo-point.geo-tipo-elevator .icon-content::before {
+    content: "\f07d"; /* Ícone de elevador */
+}
+
+/* Tipo: Banheiro */
+.geo-point.geo-tipo-banheiro {
+    background-color: #38bdf8;
+}
+.geo-point.geo-tipo-banheiro .icon-content::before {
+    content: "\f7d8"; /* Ícone de banheiro */
+}
+
+/* Tipo: Rampa */
+.geo-point.geo-tipo-rampa {
+    background-color: #a78bfa;
+}
+.geo-point.geo-tipo-rampa .icon-content::before {
+    content: "\f193"; /* Ícone de rampa (wheelchair) */
+}

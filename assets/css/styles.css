@@ -1,0 +1,112 @@
+/* styles.css */
+@import url('geojson-styles.css');
+/* Minimal vanilla CSS to complement Tailwind */
+
+body {
+    font-family: 'Inter', sans-serif;
+}
+
+/* Custom switch toggle */
+.toggle-switch {
+    display: inline-block;
+    height: 24px;
+    position: relative;
+    width: 44px;
+}
+
+.toggle-bg {
+    border-radius: 9999px;
+    height: 100%;
+    left: 0;
+    position: absolute;
+    top: 0;
+    transition: background-color 0.2s;
+    width: 100%;
+}
+
+.toggle-bg::after {
+    background-color: white;
+    border-radius: 50%;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
+    content: '';
+    height: 20px;
+    left: 2px;
+    position: absolute;
+    top: 2px;
+    transition: transform 0.2s;
+    width: 20px;
+}
+
+input:checked+.toggle-bg::after {
+    transform: translateX(20px);
+}
+
+/* Steps list styling */
+.step-number {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 24px;
+    height: 24px;
+    background-color: #eff6ff;
+    color: #2563eb;
+    border-radius: 9999px;
+    font-size: 12px;
+    font-weight: 700;
+    margin-right: 12px;
+    flex-shrink: 0;
+}
+
+#list-instructions li {
+    display: flex;
+    align-items: flex-start;
+    padding-bottom: 12px;
+    position: relative;
+}
+
+/* Add a connector line between steps */
+#list-instructions li:not(:last-child)::after {
+    content: '';
+    position: absolute;
+    left: 11px;
+    top: 24px;
+    bottom: 0;
+    width: 2px;
+    background-color: #e2e8f0;
+}
+
+#list-instructions li span:last-child {
+    padding-top: 2px;
+    color: #334155;
+    line-height: 1.4;
+}
+
+/* Selected Floor State */
+.floor-btn.active-floor {
+    background-color: #eff6ff;
+    color: #2563eb;
+    border-color: #bfdbfe;
+}
+
+.pattern-grid {
+    background-image: radial-gradient(#cbd5e1 1px, transparent 1px);
+    background-size: 20px 20px;
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+    width: 6px;
+}
+
+::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #cbd5e1;
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #94a3b8;
+}
