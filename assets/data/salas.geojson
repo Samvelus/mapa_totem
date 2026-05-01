@@ -13,8 +13,8 @@
             "properties": {
                 "nome": "AU 04",
                 "acessivel": false,
-                "andar": "0",
-                "bloco": "FAET",
+                "andar": 0,
+                "bloco": "faet",
                 "tipo": "Sala",
                 "imagem": null,
                 "link": null
@@ -52,8 +52,8 @@
             "properties": {
                 "nome": "AU 03",
                 "acessivel": false,
-                "andar": "0",
-                "bloco": "FAET",
+                "andar": 0,
+                "bloco": "faet",
                 "tipo": "Sala",
                 "imagem": null,
                 "link": null
@@ -91,8 +91,8 @@
             "properties": {
                 "nome": "AU 02",
                 "acessivel": false,
-                "andar": "0",
-                "bloco": "FAET",
+                "andar": 0,
+                "bloco": "faet",
                 "tipo": "Sala",
                 "imagem": null,
                 "link": null
@@ -130,8 +130,8 @@
             "properties": {
                 "nome": "AU 01",
                 "acessivel": false,
-                "andar": "0",
-                "bloco": "FAET",
+                "andar": 0,
+                "bloco": "faet",
                 "tipo": "Sala",
                 "imagem": null,
                 "link": null
@@ -169,8 +169,8 @@
             "properties": {
                 "nome": "CA Física",
                 "acessivel": false,
-                "andar": "0",
-                "bloco": "FAET",
+                "andar": 0,
+                "bloco": "faet",
                 "tipo": "Centro acadêmico",
                 "imagem": null,
                 "link": null
@@ -208,8 +208,8 @@
             "properties": {
                 "nome": "CA Química",
                 "acessivel": false,
-                "andar": "0",
-                "bloco": "FAET",
+                "andar": 0,
+                "bloco": "faet",
                 "tipo": "Centro acadêmico",
                 "imagem": null,
                 "link": null
@@ -247,8 +247,8 @@
             "properties": {
                 "nome": "CA Engenharia elétrica",
                 "acessivel": false,
-                "andar": "0",
-                "bloco": "FAET",
+                "andar": 0,
+                "bloco": "faet",
                 "tipo": "Centro acadêmico",
                 "imagem": null,
                 "link": null
@@ -286,8 +286,8 @@
             "properties": {
                 "nome": "CA Engenharia sanitária",
                 "acessivel": false,
-                "andar": "0",
-                "bloco": "FAET",
+                "andar": 0,
+                "bloco": "faet",
                 "tipo": "Centro acadêmico",
                 "imagem": null,
                 "link": null
@@ -325,8 +325,8 @@
             "properties": {
                 "nome": "ENE 104 Laboratório de Conversão de energia",
                 "acessivel": false,
-                "andar": "0",
-                "bloco": "FAET",
+                "andar": 0,
+                "bloco": "faet",
                 "tipo": "Laboratório",
                 "imagem": null,
                 "link": null
@@ -364,8 +364,8 @@
             "properties": {
                 "nome": "CA",
                 "acessivel": false,
-                "andar": "0",
-                "bloco": "FAET",
+                "andar": 0,
+                "bloco": "faet",
                 "tipo": "Sala",
                 "imagem": null,
                 "link": null
@@ -403,8 +403,8 @@
             "properties": {
                 "nome": "ENE Laboratório de medidas elétricas",
                 "acessivel": false,
-                "andar": "0",
-                "bloco": "FAET",
+                "andar": 0,
+                "bloco": "faet",
                 "tipo": "Laboratório",
                 "imagem": null,
                 "link": null
@@ -442,8 +442,8 @@
             "properties": {
                 "nome": "Sala",
                 "acessivel": false,
-                "andar": "0",
-                "bloco": "FAET",
+                "andar": 0,
+                "bloco": "faet",
                 "tipo": "Sala",
                 "imagem": null,
                 "link": null
@@ -481,8 +481,8 @@
             "properties": {
                 "nome": "ENE 106 Laboratório de eletrônica de potência",
                 "acessivel": false,
-                "andar": "0",
-                "bloco": "FAET",
+                "andar": 0,
+                "bloco": "faet",
                 "tipo": "Laboratório",
                 "imagem": null,
                 "link": null
@@ -520,8 +520,8 @@
             "properties": {
                 "nome": "ENE",
                 "acessivel": false,
-                "andar": "0",
-                "bloco": "FAET",
+                "andar": 0,
+                "bloco": "faet",
                 "tipo": "Sala",
                 "imagem": null,
                 "link": null
@@ -559,8 +559,8 @@
             "properties": {
                 "nome": "ENE 107 Laboratório de microprocessadores",
                 "acessivel": false,
-                "andar": "0",
-                "bloco": "FAET",
+                "andar": 0,
+                "bloco": "faet",
                 "tipo": "Laboratório",
                 "imagem": null,
                 "link": null
@@ -598,8 +598,8 @@
             "properties": {
                 "nome": "ENE 112 Laboratório de qualidade de energia",
                 "acessivel": false,
-                "andar": "0",
-                "bloco": "FAET",
+                "andar": 0,
+                "bloco": "faet",
                 "tipo": "Laboratório",
                 "imagem": null,
                 "link": null
@@ -637,8 +637,8 @@
             "properties": {
                 "nome": "ENE",
                 "acessivel": false,
-                "andar": "0",
-                "bloco": "FAET",
+                "andar": 0,
+                "bloco": "faet",
                 "tipo": "Sala",
                 "imagem": null,
                 "link": null
@@ -676,8 +676,8 @@
             "properties": {
                 "nome": "ENE 108 Laboratório telecomunicações",
                 "acessivel": false,
-                "andar": "0",
-                "bloco": "FAET",
+                "andar": 0,
+                "bloco": "faet",
                 "tipo": "Laboratório",
                 "imagem": null,
                 "link": null
@@ -715,8 +715,8 @@
             "properties": {
                 "nome": "ENE 113A",
                 "acessivel": false,
-                "andar": "0",
-                "bloco": "FAET",
+                "andar": 0,
+                "bloco": "faet",
                 "tipo": "Sala",
                 "imagem": null,
                 "link": null
@@ -754,8 +754,8 @@
             "properties": {
                 "nome": "Sala de pesquisa (Operação de sistemas elétricos e redes digitais)",
                 "acessivel": false,
-                "andar": "0",
-                "bloco": "FAET",
+                "andar": 0,
+                "bloco": "faet",
                 "tipo": "Sala",
                 "imagem": null,
                 "link": null
@@ -793,8 +793,8 @@
             "properties": {
                 "nome": "LAMINE",
                 "acessivel": false,
-                "andar": "0",
-                "bloco": "FAET",
+                "andar": 0,
+                "bloco": "faet",
                 "tipo": "Laboratório",
                 "imagem": null,
                 "link": null
@@ -840,8 +840,8 @@
             "properties": {
                 "nome": "ENE 102 Laboratório de máquinas",
                 "acessivel": false,
-                "andar": "0",
-                "bloco": "FAET",
+                "andar": 0,
+                "bloco": "faet",
                 "tipo": "Laboratório",
                 "imagem": null,
                 "link": null
@@ -879,8 +879,8 @@
             "properties": {
                 "nome": "ENE 103 Laboratório Eletrotécnica",
                 "acessivel": false,
-                "andar": "0",
-                "bloco": "FAET",
+                "andar": 0,
+                "bloco": "faet",
                 "tipo": "Laboratório",
                 "imagem": null,
                 "link": null
@@ -918,8 +918,8 @@
             "properties": {
                 "nome": "FAETINF",
                 "acessivel": false,
-                "andar": "0",
-                "bloco": "FAET",
+                "andar": 0,
+                "bloco": "faet",
                 "tipo": "Laboratório",
                 "imagem": null,
                 "link": null
@@ -961,8 +961,8 @@
             "properties": {
                 "nome": "AU 116",
                 "acessivel": false,
-                "andar": "0",
-                "bloco": "FAET",
+                "andar": 0,
+                "bloco": "faet",
                 "tipo": "Ateliê",
                 "imagem": null,
                 "link": null
@@ -1000,8 +1000,8 @@
             "properties": {
                 "nome": "ENC 115",
                 "acessivel": false,
-                "andar": "0",
-                "bloco": "FAET",
+                "andar": 0,
+                "bloco": "faet",
                 "tipo": "Sala",
                 "imagem": null,
                 "link": null
@@ -1039,8 +1039,8 @@
             "properties": {
                 "nome": "OHMEGA",
                 "acessivel": false,
-                "andar": "0",
-                "bloco": "FAET",
+                "andar": 0,
+                "bloco": "faet",
                 "tipo": "Laboratório",
                 "imagem": null,
                 "link": null
@@ -1078,8 +1078,8 @@
             "properties": {
                 "nome": "Sala 16",
                 "acessivel": false,
-                "andar": "0",
-                "bloco": "PROAD",
+                "andar": 0,
+                "bloco": "proad",
                 "tipo": "Sala",
                 "imagem": null,
                 "link": null
@@ -1117,8 +1117,8 @@
             "properties": {
                 "nome": "Laboratório de conforto ambiental",
                 "acessivel": false,
-                "andar": "0",
-                "bloco": "FAET",
+                "andar": 0,
+                "bloco": "faet",
                 "tipo": "Laboratório",
                 "imagem": null,
                 "link": null
@@ -1156,8 +1156,8 @@
             "properties": {
                 "nome": "NAU",
                 "acessivel": false,
-                "andar": "0",
-                "bloco": "FAET",
+                "andar": 0,
+                "bloco": "faet",
                 "tipo": "Laboratório",
                 "imagem": null,
                 "link": null
@@ -1195,8 +1195,8 @@
             "properties": {
                 "nome": "Laboratório ergonomia",
                 "acessivel": false,
-                "andar": "0",
-                "bloco": "FAET",
+                "andar": 0,
+                "bloco": "faet",
                 "tipo": "Laboratório",
                 "imagem": null,
                 "link": null
@@ -1234,8 +1234,8 @@
             "properties": {
                 "nome": "ENE",
                 "acessivel": false,
-                "andar": "0",
-                "bloco": "FAET",
+                "andar": 0,
+                "bloco": "faet",
                 "tipo": "Sala",
                 "imagem": null,
                 "link": null
@@ -1273,8 +1273,8 @@
             "properties": {
                 "nome": "Departamento de estatística",
                 "acessivel": false,
-                "andar": "0",
-                "bloco": "FAET",
+                "andar": 0,
+                "bloco": "faet",
                 "tipo": "Sala",
                 "imagem": null,
                 "link": null
@@ -1312,8 +1312,8 @@
             "properties": {
                 "nome": "ENE",
                 "acessivel": false,
-                "andar": "0",
-                "bloco": "FAET",
+                "andar": 0,
+                "bloco": "faet",
                 "tipo": "Sala",
                 "imagem": null,
                 "link": null
@@ -1351,8 +1351,8 @@
             "properties": {
                 "nome": "ENE",
                 "acessivel": false,
-                "andar": "0",
-                "bloco": "FAET",
+                "andar": 0,
+                "bloco": "faet",
                 "tipo": "Sala",
                 "imagem": null,
                 "link": null
@@ -1390,8 +1390,8 @@
             "properties": {
                 "nome": "CA Engenharia civil",
                 "acessivel": false,
-                "andar": "0",
-                "bloco": "FAET",
+                "andar": 0,
+                "bloco": "faet",
                 "tipo": "Centro acadêmico",
                 "imagem": null,
                 "link": null
@@ -1433,8 +1433,8 @@
             "properties": {
                 "nome": "Sala dos professores estatística",
                 "acessivel": false,
-                "andar": "0",
-                "bloco": "FAET",
+                "andar": 0,
+                "bloco": "faet",
                 "tipo": "Sala",
                 "imagem": null,
                 "link": null
@@ -1472,8 +1472,8 @@
             "properties": {
                 "nome": "CA Matemática",
                 "acessivel": false,
-                "andar": "0",
-                "bloco": "FAET",
+                "andar": 0,
+                "bloco": "faet",
                 "tipo": "Centro acadêmico",
                 "imagem": null,
                 "link": null
@@ -1511,8 +1511,8 @@
             "properties": {
                 "nome": "Pós graduação",
                 "acessivel": false,
-                "andar": "0",
-                "bloco": "FAET",
+                "andar": 0,
+                "bloco": "faet",
                 "tipo": "Sala",
                 "imagem": null,
                 "link": null
@@ -1550,8 +1550,8 @@
             "properties": {
                 "nome": "Pós graduação",
                 "acessivel": false,
-                "andar": "0",
-                "bloco": "FAET",
+                "andar": 0,
+                "bloco": "faet",
                 "tipo": "Sala",
                 "imagem": null,
                 "link": null
@@ -1597,8 +1597,8 @@
             "properties": {
                 "nome": "ICET DEST Laboratório de pesquisa e extensão",
                 "acessivel": false,
-                "andar": "0",
-                "bloco": "FAET",
+                "andar": 0,
+                "bloco": "faet",
                 "tipo": "Laboratório",
                 "imagem": null,
                 "link": null
@@ -1636,8 +1636,8 @@
             "properties": {
                 "nome": "PET Elétrica",
                 "acessivel": false,
-                "andar": "0",
-                "bloco": "FAET",
+                "andar": 0,
+                "bloco": "faet",
                 "tipo": "Sala",
                 "imagem": "https://th.bing.com/th/id/OIP.rgAq4KSLIawvggOA56WulgHaFE?w=212&h=180&c=7&r=0&o=7&pid=1.7&rm=3",
                 "link": "https://www.ufmt.br/unidade/peteletrica"
@@ -1680,8 +1680,8 @@
             "properties": {
                 "nome": "Saala de estudos ICET",
                 "acessivel": false,
-                "andar": "0",
-                "bloco": "FAET",
+                "andar": 0,
+                "bloco": "faet",
                 "tipo": "Sala",
                 "imagem": null,
                 "link": null
@@ -1727,8 +1727,8 @@
             "properties": {
                 "nome": "ALIQUAM",
                 "acessivel": false,
-                "andar": "0",
-                "bloco": "FAET",
+                "andar": 0,
+                "bloco": "faet",
                 "tipo": "Sala",
                 "imagem": null,
                 "link": null
@@ -1766,8 +1766,8 @@
             "properties": {
                 "nome": "Mofão",
                 "acessivel": false,
-                "andar": "0",
-                "bloco": "FAET",
+                "andar": 0,
+                "bloco": "faet",
                 "tipo": "Auditório",
                 "imagem": null,
                 "link": null
@@ -1805,8 +1805,8 @@
             "properties": {
                 "nome": "CA Arquitetura",
                 "acessivel": false,
-                "andar": "0",
-                "bloco": "FAET",
+                "andar": 0,
+                "bloco": "faet",
                 "tipo": "Centro acadêmico",
                 "imagem": null,
                 "link": null
@@ -1844,8 +1844,8 @@
             "properties": {
                 "nome": "Lauu",
                 "acessivel": false,
-                "andar": "0",
-                "bloco": "FAET",
+                "andar": 0,
+                "bloco": "faet",
                 "tipo": "Sala",
                 "imagem": null,
                 "link": null
@@ -1887,8 +1887,8 @@
             "properties": {
                 "nome": "LAPE",
                 "acessivel": false,
-                "andar": "0",
-                "bloco": "FAET",
+                "andar": 0,
+                "bloco": "faet",
                 "tipo": "Laboratório",
                 "imagem": null,
                 "link": null
@@ -1926,8 +1926,8 @@
             "properties": {
                 "nome": "???",
                 "acessivel": false,
-                "andar": "0",
-                "bloco": "FAET",
+                "andar": 0,
+                "bloco": "faet",
                 "tipo": "Sala",
                 "imagem": null,
                 "link": null
@@ -1973,8 +1973,8 @@
             "properties": {
                 "nome": "ENC 108",
                 "acessivel": false,
-                "andar": "0",
-                "bloco": "FAET",
+                "andar": 0,
+                "bloco": "faet",
                 "tipo": "Sala",
                 "imagem": null,
                 "link": null
@@ -2012,8 +2012,8 @@
             "properties": {
                 "nome": "ENC 109",
                 "acessivel": false,
-                "andar": "0",
-                "bloco": "FAET",
+                "andar": 0,
+                "bloco": "faet",
                 "tipo": "Sala",
                 "imagem": null,
                 "link": null
@@ -2051,8 +2051,8 @@
             "properties": {
                 "nome": "Laboratório de mecânica do solo (apoio)",
                 "acessivel": false,
-                "andar": "0",
-                "bloco": "FAET",
+                "andar": 0,
+                "bloco": "faet",
                 "tipo": "Laboratório",
                 "imagem": null,
                 "link": null
@@ -2090,8 +2090,8 @@
             "properties": {
                 "nome": "Sala de monitoria ENC",
                 "acessivel": false,
-                "andar": "0",
-                "bloco": "FAET",
+                "andar": 0,
+                "bloco": "faet",
                 "tipo": "Sala",
                 "imagem": null,
                 "link": null
@@ -2129,8 +2129,8 @@
             "properties": {
                 "nome": "Laboratório materiais de construção(apoio)",
                 "acessivel": false,
-                "andar": "0",
-                "bloco": "FAET",
+                "andar": 0,
+                "bloco": "faet",
                 "tipo": "Laboratório",
                 "imagem": null,
                 "link": null
@@ -2168,8 +2168,8 @@
             "properties": {
                 "nome": "Cantina",
                 "acessivel": false,
-                "andar": "0",
-                "bloco": "FAET",
+                "andar": 0,
+                "bloco": "faet",
                 "tipo": "Cantina",
                 "imagem": null,
                 "link": null
@@ -2207,8 +2207,8 @@
             "properties": {
                 "nome": "Laboratório dinâmica de estruturas",
                 "acessivel": false,
-                "andar": "0",
-                "bloco": "FAET",
+                "andar": 0,
+                "bloco": "faet",
                 "tipo": "Laboratório",
                 "imagem": null,
                 "link": null
@@ -2246,8 +2246,8 @@
             "properties": {
                 "nome": "DARQ FAET",
                 "acessivel": false,
-                "andar": "0",
-                "bloco": "FAET",
+                "andar": 0,
+                "bloco": "faet",
                 "tipo": "Sala",
                 "imagem": null,
                 "link": null
@@ -2285,8 +2285,8 @@
             "properties": {
                 "nome": "LIAMA",
                 "acessivel": false,
-                "andar": "0",
-                "bloco": "FAET",
+                "andar": 0,
+                "bloco": "faet",
                 "tipo": "Laboratório",
                 "imagem": null,
                 "link": null
@@ -2324,8 +2324,8 @@
             "properties": {
                 "nome": "ENC 105",
                 "acessivel": false,
-                "andar": "0",
-                "bloco": "FAET",
+                "andar": 0,
+                "bloco": "faet",
                 "tipo": "Sala",
                 "imagem": null,
                 "link": null
@@ -2363,8 +2363,8 @@
             "properties": {
                 "nome": "Sala de estudos arquitetura",
                 "acessivel": false,
-                "andar": "0",
-                "bloco": "FAET",
+                "andar": 0,
+                "bloco": "faet",
                 "tipo": "Sala",
                 "imagem": null,
                 "link": null
@@ -2402,8 +2402,8 @@
             "properties": {
                 "nome": "???",
                 "acessivel": false,
-                "andar": "0",
-                "bloco": "FAET",
+                "andar": 0,
+                "bloco": "faet",
                 "tipo": "Sala",
                 "imagem": null,
                 "link": null
@@ -2441,8 +2441,8 @@
             "properties": {
                 "nome": "Laboratório aquário",
                 "acessivel": false,
-                "andar": "0",
-                "bloco": "FAET",
+                "andar": 0,
+                "bloco": "faet",
                 "tipo": "Laboratório",
                 "imagem": null,
                 "link": null
@@ -2480,8 +2480,8 @@
             "properties": {
                 "nome": "Laboratório Vera Sandanielo",
                 "acessivel": false,
-                "andar": "0",
-                "bloco": "FAET",
+                "andar": 0,
+                "bloco": "faet",
                 "tipo": "Laboratório",
                 "imagem": null,
                 "link": null
@@ -2523,8 +2523,8 @@
             "properties": {
                 "nome": "Sala 13",
                 "acessivel": false,
-                "andar": "0",
-                "bloco": "FAET",
+                "andar": 0,
+                "bloco": "faet",
                 "tipo": "Sala",
                 "imagem": null,
                 "link": null
@@ -2562,8 +2562,8 @@
             "properties": {
                 "nome": "Laboratório de mecânica dos solos",
                 "acessivel": false,
-                "andar": "0",
-                "bloco": "FAET",
+                "andar": 0,
+                "bloco": "faet",
                 "tipo": "Laboratório",
                 "imagem": null,
                 "link": null
@@ -2601,8 +2601,8 @@
             "properties": {
                 "nome": "REAMEC",
                 "acessivel": false,
-                "andar": "0",
-                "bloco": "FAET",
+                "andar": 0,
+                "bloco": "faet",
                 "tipo": "Sala",
                 "imagem": null,
                 "link": null
@@ -2640,8 +2640,8 @@
             "properties": {
                 "nome": "Laboratório asfalto",
                 "acessivel": false,
-                "andar": "0",
-                "bloco": "FAET",
+                "andar": 0,
+                "bloco": "faet",
                 "tipo": "Laboratório",
                 "imagem": null,
                 "link": null
@@ -2679,8 +2679,8 @@
             "properties": {
                 "nome": "Proad 01",
                 "acessivel": false,
-                "andar": "0",
-                "bloco": "PROAD",
+                "andar": 0,
+                "bloco": "proad",
                 "tipo": "Sala",
                 "imagem": null,
                 "link": null
@@ -2718,8 +2718,8 @@
             "properties": {
                 "nome": "Proad 02",
                 "acessivel": false,
-                "andar": "0",
-                "bloco": "PROAD",
+                "andar": 0,
+                "bloco": "proad",
                 "tipo": "Sala",
                 "imagem": null,
                 "link": null
@@ -2757,8 +2757,8 @@
             "properties": {
                 "nome": "Proad 03",
                 "acessivel": false,
-                "andar": "0",
-                "bloco": "PROAD",
+                "andar": 0,
+                "bloco": "proad",
                 "tipo": "Sala",
                 "imagem": null,
                 "link": null
@@ -2796,8 +2796,8 @@
             "properties": {
                 "nome": "ALIQUAM",
                 "acessivel": false,
-                "andar": "0",
-                "bloco": "FAET",
+                "andar": 0,
+                "bloco": "faet",
                 "tipo": "Sala",
                 "imagem": null,
                 "link": null
@@ -2835,8 +2835,8 @@
             "properties": {
                 "nome": "Proad 04",
                 "acessivel": false,
-                "andar": "0",
-                "bloco": "PROAD",
+                "andar": 0,
+                "bloco": "proad",
                 "tipo": "Sala",
                 "imagem": null,
                 "link": null
@@ -2874,8 +2874,8 @@
             "properties": {
                 "nome": "ALIQUAM",
                 "acessivel": false,
-                "andar": "0",
-                "bloco": "FAET",
+                "andar": 0,
+                "bloco": "faet",
                 "tipo": "Sala",
                 "imagem": null,
                 "link": null
@@ -2913,8 +2913,8 @@
             "properties": {
                 "nome": "Proad 05",
                 "acessivel": false,
-                "andar": "0",
-                "bloco": "PROAD",
+                "andar": 0,
+                "bloco": "proad",
                 "tipo": "Sala",
                 "imagem": null,
                 "link": null
@@ -2952,8 +2952,8 @@
             "properties": {
                 "nome": "GEPEMAT",
                 "acessivel": false,
-                "andar": "0",
-                "bloco": "FAET",
+                "andar": 0,
+                "bloco": "faet",
                 "tipo": "Sala",
                 "imagem": null,
                 "link": null
@@ -2991,8 +2991,8 @@
             "properties": {
                 "nome": "Sala 120",
                 "acessivel": false,
-                "andar": "1",
-                "bloco": "FAET",
+                "andar": 1,
+                "bloco": "faet",
                 "tipo": "Sala",
                 "imagem": null,
                 "link": null
@@ -3030,8 +3030,8 @@
             "properties": {
                 "nome": "Sala 121",
                 "acessivel": false,
-                "andar": "1",
-                "bloco": "FAET",
+                "andar": 1,
+                "bloco": "faet",
                 "tipo": "Sala",
                 "imagem": null,
                 "link": null
@@ -3069,8 +3069,8 @@
             "properties": {
                 "nome": "E3 TECHI",
                 "acessivel": false,
-                "andar": "1",
-                "bloco": "FAET",
+                "andar": 1,
+                "bloco": "faet",
                 "tipo": "Sala",
                 "imagem": null,
                 "link": null
@@ -3108,8 +3108,8 @@
             "properties": {
                 "nome": "Sala 128",
                 "acessivel": false,
-                "andar": "1",
-                "bloco": "FAET",
+                "andar": 1,
+                "bloco": "faet",
                 "tipo": "Sala",
                 "imagem": null,
                 "link": null
@@ -3147,8 +3147,8 @@
             "properties": {
                 "nome": "Sala 123",
                 "acessivel": false,
-                "andar": "1",
-                "bloco": "FAET",
+                "andar": 1,
+                "bloco": "faet",
                 "tipo": "Sala",
                 "imagem": null,
                 "link": null
@@ -3186,8 +3186,8 @@
             "properties": {
                 "nome": "Sala 127",
                 "acessivel": false,
-                "andar": "1",
-                "bloco": "FAET",
+                "andar": 1,
+                "bloco": "faet",
                 "tipo": "Sala",
                 "imagem": null,
                 "link": null
@@ -3225,8 +3225,8 @@
             "properties": {
                 "nome": "Sala 124",
                 "acessivel": false,
-                "andar": "1",
-                "bloco": "FAET",
+                "andar": 1,
+                "bloco": "faet",
                 "tipo": "Sala",
                 "imagem": null,
                 "link": null
@@ -3264,8 +3264,8 @@
             "properties": {
                 "nome": "Sala 124",
                 "acessivel": false,
-                "andar": "1",
-                "bloco": "FAET",
+                "andar": 1,
+                "bloco": "faet",
                 "tipo": "Sala",
                 "imagem": null,
                 "link": null
@@ -3303,8 +3303,8 @@
             "properties": {
                 "nome": "Sala de estudos ENC",
                 "acessivel": false,
-                "andar": "1",
-                "bloco": "FAET",
+                "andar": 1,
+                "bloco": "faet",
                 "tipo": "Sala",
                 "imagem": null,
                 "link": null
@@ -3342,8 +3342,8 @@
             "properties": {
                 "nome": "Sala de estudos ENE",
                 "acessivel": false,
-                "andar": "1",
-                "bloco": "FAET",
+                "andar": 1,
+                "bloco": "faet",
                 "tipo": "Sala",
                 "imagem": null,
                 "link": null
@@ -3381,8 +3381,8 @@
             "properties": {
                 "nome": "DOUTORADO ENE",
                 "acessivel": false,
-                "andar": "1",
-                "bloco": "FAET",
+                "andar": 1,
+                "bloco": "faet",
                 "tipo": "Sala",
                 "imagem": null,
                 "link": null
@@ -3420,8 +3420,8 @@
             "properties": {
                 "nome": "DOUTORADO ENE",
                 "acessivel": false,
-                "andar": "1",
-                "bloco": "FAET",
+                "andar": 1,
+                "bloco": "faet",
                 "tipo": "Sala",
                 "imagem": null,
                 "link": null
@@ -3459,8 +3459,8 @@
             "properties": {
                 "nome": "DOUTORADO ENE",
                 "acessivel": false,
-                "andar": "1",
-                "bloco": "FAET",
+                "andar": 1,
+                "bloco": "faet",
                 "tipo": "Sala",
                 "imagem": null,
                 "link": null
@@ -3498,8 +3498,8 @@
             "properties": {
                 "nome": "DOUTORADO ENE",
                 "acessivel": false,
-                "andar": "1",
-                "bloco": "FAET",
+                "andar": 1,
+                "bloco": "faet",
                 "tipo": "Sala",
                 "imagem": null,
                 "link": null
@@ -3537,8 +3537,8 @@
             "properties": {
                 "nome": "DOUTORADO ENE",
                 "acessivel": false,
-                "andar": "1",
-                "bloco": "FAET",
+                "andar": 1,
+                "bloco": "faet",
                 "tipo": "Sala",
                 "imagem": null,
                 "link": null
@@ -3576,8 +3576,8 @@
             "properties": {
                 "nome": "DOUTORADO ENE",
                 "acessivel": false,
-                "andar": "1",
-                "bloco": "FAET",
+                "andar": 1,
+                "bloco": "faet",
                 "tipo": "Sala",
                 "imagem": null,
                 "link": null
@@ -3615,8 +3615,8 @@
             "properties": {
                 "nome": "Departamento de Engenharia Elétrica",
                 "acessivel": false,
-                "andar": "1",
-                "bloco": "FAET",
+                "andar": 1,
+                "bloco": "faet",
                 "tipo": "Departamento",
                 "imagem": null,
                 "link": null
@@ -3654,8 +3654,8 @@
             "properties": {
                 "nome": "Departamento de Arquitetura e  Engenharia Civil",
                 "acessivel": false,
-                "andar": "1",
-                "bloco": "FAET",
+                "andar": 1,
+                "bloco": "faet",
                 "tipo": "Departamento",
                 "imagem": null,
                 "link": null
@@ -3693,8 +3693,8 @@
             "properties": {
                 "nome": "PPGHR",
                 "acessivel": false,
-                "andar": "1",
-                "bloco": "FAET",
+                "andar": 1,
+                "bloco": "faet",
                 "tipo": "Sala",
                 "imagem": null,
                 "link": null
@@ -3732,8 +3732,8 @@
             "properties": {
                 "nome": "Sala 02",
                 "acessivel": false,
-                "andar": "1",
-                "bloco": "FAET",
+                "andar": 1,
+                "bloco": "faet",
                 "tipo": "Sala",
                 "imagem": null,
                 "link": null
@@ -3771,8 +3771,8 @@
             "properties": {
                 "nome": "Secretaria da FAET",
                 "acessivel": false,
-                "andar": "1",
-                "bloco": "FAET",
+                "andar": 1,
+                "bloco": "faet",
                 "tipo": "Secretaria",
                 "imagem": null,
                 "link": null
@@ -3810,8 +3810,8 @@
             "properties": {
                 "nome": "Departamento de Matemática",
                 "acessivel": false,
-                "andar": "1",
-                "bloco": "FAET",
+                "andar": 1,
+                "bloco": "faet",
                 "tipo": "Departamento",
                 "imagem": null,
                 "link": null
@@ -3849,8 +3849,8 @@
             "properties": {
                 "nome": "AU 22",
                 "acessivel": false,
-                "andar": "1",
-                "bloco": "FAET",
+                "andar": 1,
+                "bloco": "faet",
                 "tipo": "Sala",
                 "imagem": null,
                 "link": null
@@ -3888,8 +3888,8 @@
             "properties": {
                 "nome": "AU 24",
                 "acessivel": false,
-                "andar": "1",
-                "bloco": "FAET",
+                "andar": 1,
+                "bloco": "faet",
                 "tipo": "Sala",
                 "imagem": null,
                 "link": null
@@ -3927,8 +3927,8 @@
             "properties": {
                 "nome": "AU 21",
                 "acessivel": false,
-                "andar": "1",
-                "bloco": "FAET",
+                "andar": 1,
+                "bloco": "faet",
                 "tipo": "Sala",
                 "imagem": null,
                 "link": null
@@ -3966,8 +3966,8 @@
             "properties": {
                 "nome": "AU 23",
                 "acessivel": false,
-                "andar": "1",
-                "bloco": "FAET",
+                "andar": 1,
+                "bloco": "faet",
                 "tipo": "Sala",
                 "imagem": null,
                 "link": null
@@ -4005,8 +4005,8 @@
             "properties": {
                 "nome": "PROAD 10",
                 "acessivel": false,
-                "andar": "1",
-                "bloco": "FAET",
+                "andar": 1,
+                "bloco": "faet",
                 "tipo": "Sala",
                 "imagem": null,
                 "link": null
@@ -4044,8 +4044,8 @@
             "properties": {
                 "nome": "PROAD 09",
                 "acessivel": false,
-                "andar": "1",
-                "bloco": "FAET",
+                "andar": 1,
+                "bloco": "faet",
                 "tipo": "Sala",
                 "imagem": null,
                 "link": null
@@ -4083,8 +4083,8 @@
             "properties": {
                 "nome": "PROAD 8",
                 "acessivel": false,
-                "andar": "1",
-                "bloco": "FAET",
+                "andar": 1,
+                "bloco": "faet",
                 "tipo": "Sala",
                 "imagem": null,
                 "link": null
@@ -4122,8 +4122,8 @@
             "properties": {
                 "nome": "PROAD 7",
                 "acessivel": false,
-                "andar": "1",
-                "bloco": "FAET",
+                "andar": 1,
+                "bloco": "faet",
                 "tipo": "Sala",
                 "imagem": null,
                 "link": null
@@ -4161,8 +4161,8 @@
             "properties": {
                 "nome": "PROAD 6",
                 "acessivel": false,
-                "andar": "1",
-                "bloco": "FAET",
+                "andar": 1,
+                "bloco": "faet",
                 "tipo": "Sala",
                 "imagem": null,
                 "link": null
@@ -4200,8 +4200,8 @@
             "properties": {
                 "nome": "Sala 13",
                 "acessivel": false,
-                "andar": "2",
-                "bloco": "PROAD",
+                "andar": 2,
+                "bloco": "proad",
                 "tipo": "Sala",
                 "imagem": null,
                 "link": null
@@ -4239,8 +4239,8 @@
             "properties": {
                 "nome": "Sala 12",
                 "acessivel": false,
-                "andar": "2",
-                "bloco": "PROAD",
+                "andar": 2,
+                "bloco": "proad",
                 "tipo": "Sala",
                 "imagem": null,
                 "link": null
@@ -4278,8 +4278,8 @@
             "properties": {
                 "nome": "Sala 11",
                 "acessivel": false,
-                "andar": "2",
-                "bloco": "PROAD",
+                "andar": 2,
+                "bloco": "proad",
                 "tipo": "Sala",
                 "imagem": null,
                 "link": null
@@ -4317,8 +4317,8 @@
             "properties": {
                 "nome": "Sala 14",
                 "acessivel": false,
-                "andar": "2",
-                "bloco": "PROAD",
+                "andar": 2,
+                "bloco": "proad",
                 "tipo": "Sala",
                 "imagem": null,
                 "link": null
@@ -4356,8 +4356,8 @@
             "properties": {
                 "nome": "Sala 15",
                 "acessivel": false,
-                "andar": "2",
-                "bloco": "PROAD",
+                "andar": 2,
+                "bloco": "proad",
                 "tipo": "Sala",
                 "imagem": null,
                 "link": null
@@ -4395,8 +4395,8 @@
             "properties": {
                 "nome": "Auditório 2",
                 "acessivel": false,
-                "andar": "2",
-                "bloco": "PROAD",
+                "andar": 2,
+                "bloco": "proad",
                 "tipo": "Auditório",
                 "imagem": null,
                 "link": null

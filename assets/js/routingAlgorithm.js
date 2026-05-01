@@ -51,10 +51,11 @@ export function buildGraph() {
             id: nodeId,
             lat: coords[1],
             lng: coords[0],
-            andar: parseInt(f.properties.andar),
+            andar: f.properties.andar,          // número normalizado no GeoJSON
             tipo: f.properties.tipo,
             nome: f.properties.nome,
-            acessivel: String(f.properties.acessivel).toLowerCase() === 'true' // Some are "false" string in geojson
+            bloco: f.properties.bloco,          // bloco em minúsculas no GeoJSON
+            acessivel: f.properties.acessivel   // boolean nativo no GeoJSON
         });
     });
 
@@ -66,9 +67,10 @@ export function buildGraph() {
             id: nodeId,
             lat: entry.lat,
             lng: entry.lng,
-            andar: parseInt(f.properties.andar),
-            tipo: 'sala',
+            andar: f.properties.andar,          // número normalizado no GeoJSON
+            tipo: f.properties.tipo.toLowerCase(), // ex: 'sala', 'laboratório'
             nome: f.properties.nome,
+            bloco: f.properties.bloco,          // bloco em minúsculas no GeoJSON
             acessivel: true
         });
     });

@@ -8,8 +8,7 @@
                 "bloco": "proad",
                 "andar": 0,
                 "tipo": "banheiro",
-                "acessivel": false,
-                "status": "false"
+                "acessivel": false
             },
             "geometry": {
                 "coordinates": [
@@ -27,8 +26,7 @@
                 "bloco": "proad",
                 "andar": 0,
                 "tipo": "banheiro",
-                "acessivel": false,
-                "status": "false"
+                "acessivel": false
             },
             "geometry": {
                 "coordinates": [
@@ -46,8 +44,7 @@
                 "bloco": "nuvem",
                 "andar": 0,
                 "tipo": "banheiro",
-                "acessivel": false,
-                "status": "false"
+                "acessivel": false
             },
             "geometry": {
                 "coordinates": [
@@ -65,8 +62,7 @@
                 "bloco": "nuvem",
                 "andar": 0,
                 "tipo": "banheiro",
-                "acessivel": false,
-                "status": "false"
+                "acessivel": false
             },
             "geometry": {
                 "coordinates": [
@@ -84,8 +80,7 @@
                 "bloco": "faet",
                 "andar": 0,
                 "tipo": "banheiro",
-                "acessivel": false,
-                "status": "false"
+                "acessivel": false
             },
             "geometry": {
                 "coordinates": [
@@ -103,8 +98,7 @@
                 "bloco": "faet",
                 "andar": 0,
                 "tipo": "banheiro",
-                "acessivel": false,
-                "status": "false"
+                "acessivel": false
             },
             "geometry": {
                 "coordinates": [
@@ -122,8 +116,7 @@
                 "bloco": "faet",
                 "andar": 0,
                 "tipo": "banheiro",
-                "acessivel": false,
-                "status": "false"
+                "acessivel": false
             },
             "geometry": {
                 "coordinates": [
@@ -141,8 +134,7 @@
                 "bloco": "faet",
                 "andar": 0,
                 "tipo": "banheiro",
-                "acessivel": false,
-                "status": "false"
+                "acessivel": false
             },
             "geometry": {
                 "coordinates": [
@@ -160,8 +152,7 @@
                 "bloco": "proad",
                 "andar": 0,
                 "tipo": "elevador",
-                "acessivel": true,
-                "status": "false"
+                "acessivel": true
             },
             "geometry": {
                 "coordinates": [
@@ -179,8 +170,7 @@
                 "bloco": "faet",
                 "andar": 0,
                 "tipo": "elevador",
-                "acessivel": true,
-                "status": "false"
+                "acessivel": true
             },
             "geometry": {
                 "coordinates": [
@@ -198,8 +188,7 @@
                 "bloco": "faet",
                 "andar": 0,
                 "tipo": "escada",
-                "acessivel": false,
-                "status": "false"
+                "acessivel": false
             },
             "geometry": {
                 "coordinates": [
@@ -217,8 +206,7 @@
                 "bloco": "faet",
                 "andar": 0,
                 "tipo": "escada",
-                "acessivel": false,
-                "status": "false"
+                "acessivel": false
             },
             "geometry": {
                 "coordinates": [
@@ -236,8 +224,7 @@
                 "bloco": "faet",
                 "andar": 0,
                 "tipo": "rampa",
-                "acessivel": true,
-                "status": "false"
+                "acessivel": true
             },
             "geometry": {
                 "coordinates": [
@@ -255,8 +242,7 @@
                 "bloco": "faet",
                 "andar": 1,
                 "tipo": "escada",
-                "acessivel": false,
-                "status": "false"
+                "acessivel": false
             },
             "geometry": {
                 "coordinates": [
@@ -274,8 +260,7 @@
                 "bloco": "faet",
                 "andar": 1,
                 "tipo": "escada",
-                "acessivel": false,
-                "status": "false"
+                "acessivel": false
             },
             "geometry": {
                 "coordinates": [
@@ -293,8 +278,7 @@
                 "bloco": "nuvem",
                 "andar": 0,
                 "tipo": "escada",
-                "acessivel": false,
-                "status": "false"
+                "acessivel": false
             },
             "geometry": {
                 "coordinates": [
@@ -312,8 +296,7 @@
                 "bloco": "proad",
                 "andar": 0,
                 "tipo": "escada",
-                "acessivel": false,
-                "status": "false"
+                "acessivel": false
             },
             "geometry": {
                 "coordinates": [
@@ -331,8 +314,7 @@
                 "bloco": "faet",
                 "andar": 0,
                 "tipo": "rampa",
-                "acessivel": true,
-                "status": "false"
+                "acessivel": true
             },
             "geometry": {
                 "coordinates": [
@@ -350,8 +332,7 @@
                 "bloco": "faet",
                 "andar": 0,
                 "tipo": "escada",
-                "acessivel": false,
-                "status": "false"
+                "acessivel": false
             },
             "geometry": {
                 "coordinates": [
@@ -369,8 +350,7 @@
                 "bloco": "faet",
                 "andar": 1,
                 "tipo": "rampa",
-                "acessivel": true,
-                "status": "false"
+                "acessivel": true
             },
             "geometry": {
                 "coordinates": [
@@ -388,8 +368,7 @@
                 "bloco": "proad",
                 "andar": 0,
                 "tipo": "escada",
-                "acessivel": false,
-                "status": "false"
+                "acessivel": false
             },
             "geometry": {
                 "coordinates": [
@@ -407,8 +386,7 @@
                 "bloco": "faet",
                 "andar": 0,
                 "tipo": "escada",
-                "acessivel": false,
-                "status": "false"
+                "acessivel": false
             },
             "geometry": {
                 "coordinates": [
@@ -426,8 +404,7 @@
                 "bloco": "faet",
                 "andar": 0,
                 "tipo": "escada",
-                "acessivel": false,
-                "status": "false"
+                "acessivel": false
             },
             "geometry": {
                 "coordinates": [

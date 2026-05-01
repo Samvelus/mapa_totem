@@ -75,7 +75,7 @@ export class MapRenderer {
 
         // Render Base Polygons (Floor geometry)
         const baseLayer = L.geoJSON(geoData.floor, {
-            filter: (feature) => parseInt(feature.properties.andar) === this.currentFloor,
+            filter: (feature) => feature.properties.andar === this.currentFloor,
             style: (feature) => {
                 const tipo = feature.properties.tipo ? feature.properties.tipo.toLowerCase().replace(/[^a-z0-9]/g, '-') : 'padrao';
                 return {
@@ -87,7 +87,7 @@ export class MapRenderer {
 
         // Render Salas geometry
         const salasLayer = L.geoJSON(geoData.salas, {
-            filter: (feature) => parseInt(feature.properties.andar) === this.currentFloor,
+            filter: (feature) => feature.properties.andar === this.currentFloor,
             style: (feature) => {
                 const tipo = feature.properties.tipo ? feature.properties.tipo.toLowerCase().replace(/[^a-z0-9]/g, '-') : 'padrao';
                 return {
@@ -106,7 +106,7 @@ export class MapRenderer {
 
         // Render POIs as circles or icons
         const pontosLayer = L.geoJSON(geoData.pontos, {
-            filter: (feature) => parseInt(feature.properties.andar) === this.currentFloor,
+            filter: (feature) => feature.properties.andar === this.currentFloor,
             pointToLayer: (feature, latlng) => {
                 const tipo = feature.properties.tipo ? feature.properties.tipo.toLowerCase().replace(/[^a-z0-9]/g, '-') : 'padrao';
                 
