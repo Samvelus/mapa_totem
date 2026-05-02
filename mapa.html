@@ -14,108 +14,236 @@
     <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
 </head>
-<body class="bg-slate-100 flex flex-col h-screen overflow-hidden font-inter text-slate-800">
-    
-    <header class="bg-white shadow relative z-10 px-6 py-4 flex items-center justify-between">
-        <div class="flex items-center gap-3">
-            <div class="bg-blue-600 text-white p-2 rounded-lg">
-                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 20l-5.447-2.724A1 1 0 013 16.382V5.618a1 1 0 011.447-.894L9 7m0 13l6-3m-6 3V7m6 10l4.553 2.276A1 1 0 0021 18.382V7.618a1 1 0 00-.553-.894L15 4m0 13V4m0 0L9 7" />
-                </svg>
-            </div>
-            <h1 class="text-xl font-bold">Totem Interativo <span class="text-slate-500 font-medium text-sm ml-2">UFMT</span></h1>
-        </div>
-        <!-- Loader dinâmico -->
-        <div id="app-loading" class="flex items-center gap-2 text-blue-600 font-medium">
-            <svg class="animate-spin h-5 w-5" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24">
-                <circle class="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" stroke-width="4"></circle>
-                <path class="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z"></path>
+<body class="bg-slate-50 flex flex-col h-screen overflow-hidden font-inter text-slate-800 relative">
+
+    <!-- Loader -->
+    <div id="app-loading" class="absolute inset-0 bg-white z-[2000] flex flex-col items-center justify-center transition-opacity duration-500">
+        <div class="flex flex-col items-center gap-4 text-blue-600 font-medium">
+            <svg class="animate-spin h-10 w-10" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24">
+                <circle class="opacity-20" cx="12" cy="12" r="10" stroke="currentColor" stroke-width="4"></circle>
+                <path class="opacity-90" fill="currentColor" d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z"></path>
             </svg>
-            Carregando Mapa...
+            <span class="text-lg font-bold tracking-wide">Carregando Mapa...</span>
         </div>
-    </header>
+    </div>
 
-    <main class="flex-1 flex overflow-hidden opacity-0 transition-opacity duration-500" id="main-content">
-        <!-- Sidebar Controls -->
-        <aside class="w-96 bg-white border-r border-slate-200 overflow-y-auto flex flex-col z-20 shadow-lg relative">
+    <!-- Main Map Area using Leaflet -->
+    <main class="w-full h-screen absolute inset-0 z-0 opacity-0 transition-opacity duration-1000" id="main-content">
+        <div id="map-container" class="w-full h-full"></div>
+    </main>
+
+    <!-- 1. Widget Principal estilo SPA (Top-Left) -->
+    <div class="absolute top-4 left-4 z-[1000] w-96 flex flex-col pointer-events-none transition-all duration-300" style="bottom: 1rem;">
+        
+        <div class="bg-white/95 backdrop-blur-xl shadow-2xl rounded-3xl flex flex-col h-full max-h-[85vh] border border-white/60 pointer-events-auto overflow-hidden">
             
-            <div class="p-6 border-b border-slate-100 flex-shrink-0">
-                <h2 class="text-lg font-semibold mb-4 text-slate-800">Encontre o seu caminho</h2>
-                
-                <div class="space-y-4">
-                    <div>
-                        <label class="block text-sm font-medium text-slate-600 mb-1">Origem</label>
-                        <select id="select-origin" class="w-full border border-slate-300 rounded-lg px-3 py-2 bg-slate-50 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:bg-white transition-colors">
-                            <option value="">Selecione a Origem...</option>
-                            <!-- Options filled via JS -->
-                        </select>
+            <!-- Header (Search) -->
+            <div class="p-4 pb-3 z-20 bg-white shadow-sm shrink-0">
+                <div class="flex items-center gap-3 px-1 mb-3">
+                    <div class="bg-blue-600 text-white p-2 rounded-xl shadow-md">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M9 20l-5.447-2.724A1 1 0 013 16.382V5.618a1 1 0 011.447-.894L9 7m0 13l6-3m-6 3V7m6 10l4.553 2.276A1 1 0 0021 18.382V7.618a1 1 0 00-.553-.894L15 4m0 13V4m0 0L9 7" />
+                        </svg>
                     </div>
-                    
-                    <div>
-                        <label class="block text-sm font-medium text-slate-600 mb-1">Destino</label>
-                        <select id="select-destination" class="w-full border border-slate-300 rounded-lg px-3 py-2 bg-slate-50 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:bg-white transition-colors">
-                            <option value="">Selecione o Destino...</option>
-                            <!-- Options filled via JS -->
-                        </select>
-                    </div>
+                    <h1 class="text-xl font-bold text-slate-800 leading-tight">Totem<br><span class="text-blue-600 text-sm">UFMT</span></h1>
                 </div>
 
-                <!-- Accessibility Switch -->
-                <div class="mt-6 p-4 rounded-xl border border-blue-100 bg-blue-50 flex items-start gap-3">
-                    <div class="pt-0.5">
-                        <label class="toggle-switch">
-                            <input type="checkbox" id="toggle-accessible" class="peer sr-only">
-                            <div class="toggle-bg bg-slate-300 peer-checked:bg-blue-600"></div>
-                        </label>
-                    </div>
-                    <div>
-                        <label for="toggle-accessible" class="text-sm font-medium text-blue-900 cursor-pointer block">Exigir rota acessível</label>
-                        <p class="text-xs text-blue-700 mt-1">Evita escadas. Prioriza rampas e elevadores para cadeiras de rodas ou carrinhos.</p>
-                    </div>
-                </div>
-
-                <button id="btn-calculate" class="mt-6 w-full bg-blue-600 hover:bg-blue-700 text-white font-medium py-3 rounded-xl shadow-sm transition-colors flex items-center justify-center gap-2">
-                    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
-                        <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm1-11a1 1 0 10-2 0v2H7a1 1 0 100 2h2v2a1 1 0 102 0v-2h2a1 1 0 100-2h-2V7z" clip-rule="evenodd" />
+                <div class="relative autocomplete-container">
+                    <input type="text" id="sala-input" placeholder="Pesquisar local ou sala..." class="w-full bg-slate-100 rounded-2xl px-5 py-3 pl-12 focus:outline-none focus:ring-2 focus:ring-blue-500 transition-all text-slate-700 font-semibold placeholder:text-slate-400">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 absolute left-4 top-3.5 text-slate-400" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
                     </svg>
-                    Traçar Caminho
+                    
+                    <!-- REQUIRED FOR AUTOCOMPLETE IN UIController.js -->
+                    <div id="suggestions-container" class="absolute top-[110%] left-0 right-0 bg-white shadow-xl rounded-xl overflow-hidden hidden z-[1050] border border-slate-100 max-h-60 overflow-y-auto"></div>
+                </div>
+            </div>
+            
+            <!-- Dynamic Content Area -->
+            <div id="panel-content" class="flex-1 overflow-y-auto relative bg-slate-50/50">
+                
+                <!-- Rota Panel -->
+                <div id="tab-rotas" class="p-5 flex flex-col gap-4">
+                    <h3 class="font-bold text-slate-800 text-lg flex items-center gap-2 mb-1">
+                        Pré-visualização da rota
+                    </h3>
+                    
+                    <!-- Route Inputs -->
+                    <div class="space-y-2 relative bg-white p-3 rounded-2xl shadow-sm border border-slate-100">
+                        <div class="absolute left-[1.35rem] top-9 bottom-9 w-[2px] border-l-2 border-dashed border-slate-300 z-0"></div>
+                        
+                        <div class="relative z-10 flex items-center gap-3">
+                            <div class="w-3.5 h-3.5 rounded-full border-[3px] border-blue-500 bg-white shadow-sm ml-2.5"></div>
+                            <select id="select-origin" class="flex-1 bg-transparent border-none py-2 text-sm font-semibold text-slate-700 outline-none cursor-pointer">
+                                <option value="">Escolher o ponto de partida...</option>
+                            </select>
+                        </div>
+                        
+                        <div class="w-full h-[1px] bg-slate-100 my-1"></div>
+
+                        <div class="relative z-10 flex items-center gap-3">
+                            <div class="w-3.5 h-3.5 rounded-full bg-rose-500 shadow-sm ml-2.5"></div>
+                            <select id="select-destination" class="flex-1 bg-transparent border-none py-2 text-sm font-semibold text-slate-700 outline-none cursor-pointer">
+                                <option value="">Escolher o destino...</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <!-- Botão Flutuante (Inicia navegação no NavigationController) -->
+                    <button id="mostrar-rota-btn" class="hidden w-full bg-slate-800 hover:bg-black text-white font-bold py-3.5 rounded-xl transition-all shadow-md mt-2 flex items-center justify-center gap-2">
+                        Iniciar Navegação
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+                            <path fill-rule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clip-rule="evenodd" />
+                        </svg>
+                    </button>
+
+                    <!-- Botão Calcular Rota Estática (Controls.js) -->
+                    <button id="btn-calculate" class="w-full bg-blue-100 hover:bg-blue-200 text-blue-700 font-bold py-3.5 rounded-xl transition-all shadow-sm">
+                        Obter direções
+                    </button>
+                    
+                    <button id="limpar-btn" class="w-full bg-transparent hover:bg-slate-200 text-slate-500 font-bold py-2 rounded-xl transition-all text-sm">
+                        Limpar Caminho
+                    </button>
+
+                    <!-- Acessibilidade Checkbox (Linked) -->
+                    <label class="cursor-pointer group block mt-2">
+                        <input type="checkbox" id="toggle-accessible" class="peer sr-only" onchange="document.getElementById('acessibilidade-checkbox').checked = this.checked">
+                        <input type="checkbox" id="acessibilidade-checkbox" class="sr-only">
+                        <div class="flex items-center justify-center gap-2 p-3.5 rounded-xl border-2 border-emerald-100 bg-emerald-50 text-emerald-700 font-bold peer-checked:bg-emerald-500 peer-checked:text-white peer-checked:border-emerald-500 transition-all shadow-sm">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19.333 3.491a3.5 3.5 0 011.082 2.502c0 1.933-1.567 3.5-3.5 3.5-.23 0-.455-.022-.673-.065L15.342 12.8A3.5 3.5 0 0112 15a3.5 3.5 0 01-3.342-2.2l-.9-3.375a3.488 3.488 0 01-.673.065 3.5 3.5 0 111.082-6.009L12 8.5l3.833-5.009zM12 8.5v3.5M10 15v5m4-5v5m-7-5h10" /></svg>
+                            <span>Rota Acessível</span>
+                        </div>
+                    </label>
+
+                    <!-- Route Summary & Instructions (Controls.js fills this) -->
+                    <div id="route-summary" class="text-sm font-semibold text-slate-500 mt-2 px-1 empty:hidden"></div>
+                    <ul id="list-instructions" class="space-y-3 text-sm text-slate-700 font-medium px-1 empty:hidden"></ul>
+                </div>
+                
+            </div>
+
+            <!-- Bottom Tabs (Tab bar) -->
+            <div class="flex items-center justify-between border-t border-slate-200 bg-white p-2 z-20 shrink-0">
+                <button class="flex-1 flex flex-col items-center justify-center p-2 rounded-xl text-slate-500 hover:bg-slate-50 transition-colors">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 mb-1" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" /></svg>
+                    <span class="text-xs font-semibold">Informações</span>
+                </button>
+                <button class="flex-1 flex flex-col items-center justify-center p-2 rounded-xl text-blue-600 bg-blue-50 transition-colors">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 mb-1" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 20l-5.447-2.724A1 1 0 013 16.382V5.618a1 1 0 011.447-.894L9 7m0 13l6-3m-6 3V7m6 10l4.553 2.276A1 1 0 0021 18.382V7.618a1 1 0 00-.553-.894L15 4m0 13V4m0 0L9 7" /></svg>
+                    <span class="text-xs font-bold">Rotas</span>
+                </button>
+                <button id="btn-minimize" class="flex-1 flex flex-col items-center justify-center p-2 rounded-xl text-slate-500 hover:bg-slate-50 transition-colors">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 mb-1" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" /></svg>
+                    <span class="text-xs font-semibold" id="txt-minimize">Minimizar</span>
                 </button>
             </div>
+            
+        </div>
+    </div>
 
-            <div class="p-6 flex-1 flex flex-col min-h-0">
-                <h3 class="text-xs font-bold tracking-wider text-slate-400 uppercase mb-3">Instruções da Rota</h3>
-                <div id="route-summary" class="mb-4 text-sm font-medium text-slate-700">
-                    Selecione origem e destino para ver as instruções.
-                </div>
-                
-                <div class="flex-1 overflow-y-auto pr-2 pb-4">
-                    <ul id="list-instructions" class="space-y-4">
-                        <!-- Li elements added via JS -->
-                    </ul>
-                </div>
+    <!-- 3. Controles Flutuantes de Ambiente (Top-Right) -->
+    <div class="absolute top-4 right-4 z-[1000] flex flex-col gap-3 pointer-events-none">
+        
+        <div class="bg-white/90 backdrop-blur-md shadow-lg rounded-full p-2 flex flex-col gap-1 border border-white/40 pointer-events-auto">
+            <button id="btn-floor-2" class="floor-btn w-12 h-12 rounded-full bg-transparent font-bold text-slate-500 hover:bg-slate-100 hover:text-slate-800 transition-all focus:outline-none flex items-center justify-center text-lg" data-floor="2">2º</button>
+            <button id="btn-floor-1" class="floor-btn w-12 h-12 rounded-full bg-transparent font-bold text-slate-500 hover:bg-slate-100 hover:text-slate-800 transition-all focus:outline-none flex items-center justify-center text-lg" data-floor="1">1º</button>
+            <button id="btn-floor-0" class="floor-btn w-12 h-12 rounded-full bg-blue-600 font-bold text-white shadow-md shadow-blue-600/30 transition-all focus:outline-none flex items-center justify-center text-lg active-floor" data-floor="0">T</button>
+        </div>
+        
+        <div class="bg-white/90 backdrop-blur-md shadow-lg rounded-full p-2 flex flex-col border border-white/40 pointer-events-auto mt-1">
+            <button class="w-12 h-12 rounded-full bg-slate-100/80 flex items-center justify-center text-slate-700 font-bold hover:bg-slate-200 transition-colors shadow-inner text-sm">
+                PT
+            </button>
+        </div>
+
+    </div>
+
+    <!-- 2. Widget de Continuidade Mobile (Bottom-Left) -->
+    <div class="absolute bottom-6 left-6 z-[1000] pointer-events-auto w-80">
+        <div class="bg-white/95 backdrop-blur-md shadow-2xl rounded-3xl p-4 flex items-center gap-4 border border-white/40 hover:-translate-y-1 transition-transform cursor-pointer group">
+            <div class="w-[72px] h-[72px] bg-white rounded-2xl p-1.5 shadow-sm border border-slate-100 flex items-center justify-center group-hover:shadow-md transition-shadow">
+                <!-- Static QR Code Image -->
+                <img src="https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=https://github.com/PET-Eletrica-UFMT/" alt="QR Code Rota" class="w-full h-full rounded-xl mix-blend-multiply opacity-90">
             </div>
-            
-        </aside>
-
-        <!-- Main Map Area using Leaflet -->
-        <section class="flex-1 relative z-10 bg-slate-50">
-            
-            <!-- Floor Selector Custom Control (Overlay over map) -->
-            <div class="absolute top-4 right-4 bg-white rounded-lg shadow-md p-2 flex flex-col gap-2 z-[1000] border border-slate-200">
-                <div class="text-xs font-semibold text-slate-500 uppercase tracking-wider text-center mb-1">Andar</div>
-                <button id="btn-floor-2" class="floor-btn w-12 h-12 rounded bg-slate-100 font-bold text-slate-600 hover:bg-blue-50 hover:text-blue-600 transition-colors border border-transparent" data-floor="2">2</button>
-                <button id="btn-floor-1" class="floor-btn w-12 h-12 rounded bg-slate-100 font-bold text-slate-600 hover:bg-blue-50 hover:text-blue-600 transition-colors border border-transparent" data-floor="1">1</button>
-                <button id="btn-floor-0" class="floor-btn w-12 h-12 rounded bg-slate-100 font-bold text-slate-600 hover:bg-blue-50 hover:text-blue-600 transition-colors border border-transparent active-floor" data-floor="0">0</button>
+            <div class="flex flex-col pr-2">
+                <span class="text-sm font-extrabold text-slate-800 tracking-tight leading-snug">Para continuar no seu telefone, leia o código QR.</span>
             </div>
+        </div>
+    </div>
 
-            <div id="map-container" class="w-full h-full"></div>
-            
-        </section>
-    </main>
+    <!-- 3. Controles Flutuantes Bottom-Right (Visualizations) -->
+    <div class="absolute bottom-6 right-6 z-[1000] flex flex-col gap-4 pointer-events-none">
+        
+        <button class="w-14 h-14 rounded-full bg-white/90 backdrop-blur-md shadow-lg border border-white/40 flex items-center justify-center text-slate-600 hover:text-blue-600 hover:bg-slate-50 transition-all pointer-events-auto active:scale-95">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" /><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" /></svg>
+        </button>
+
+        <button id="btn-dark-mode" class="w-14 h-14 rounded-full bg-white/90 backdrop-blur-md shadow-lg border border-white/40 flex items-center justify-center text-slate-600 hover:text-blue-600 hover:bg-slate-50 transition-all pointer-events-auto active:scale-95">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z" /></svg>
+        </button>
+        
+    </div>
 
     <!-- Leaflet JS -->
     <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
     <!-- App entry point -->
     <script type="module" src="assets/js/app.js"></script>
+
+    <!-- UI Logic Script -->
+    <script>
+        document.getElementById('btn-minimize').addEventListener('click', function() {
+            const content = document.getElementById('panel-content');
+            const txt = document.getElementById('txt-minimize');
+            const icon = this.querySelector('svg');
+            
+            if (content.classList.contains('hidden')) {
+                content.classList.remove('hidden');
+                txt.textContent = 'Minimizar';
+                icon.innerHTML = '<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />';
+            } else {
+                content.classList.add('hidden');
+                txt.textContent = 'Expandir';
+                icon.innerHTML = '<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 15l7-7 7 7" />';
+            }
+        });
+
+        // Toggle "Iniciar Navegação"
+        const input = document.getElementById('sala-input');
+        input.addEventListener('input', function() {
+            const val = this.value.trim();
+            const btn = document.getElementById('mostrar-rota-btn');
+            if (btn) {
+                if(val.length > 0) {
+                    btn.classList.remove('hidden');
+                } else {
+                    btn.classList.add('hidden');
+                }
+            }
+        });
+        // Toggle Dark Mode (CSS Filter trick for Map)
+        const btnDarkMode = document.getElementById('btn-dark-mode');
+        let isDark = false;
+        btnDarkMode.addEventListener('click', function() {
+            isDark = !isDark;
+            const mapContainer = document.getElementById('map-container');
+            const icon = this.querySelector('svg');
+            
+            if (isDark) {
+                // Apply a smart CSS filter to invert the map tiles, but keep colors natural
+                mapContainer.style.filter = 'invert(100%) hue-rotate(180deg) brightness(95%) contrast(90%)';
+                // Change icon to Sun
+                icon.innerHTML = '<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z" />';
+                
+                // Add a simple dark class to body if you want to expand dark mode to UI later
+                document.body.classList.add('dark-theme-active');
+            } else {
+                mapContainer.style.filter = 'none';
+                // Change icon back to Moon
+                icon.innerHTML = '<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z" />';
+                document.body.classList.remove('dark-theme-active');
+            }
+        });
+    </script>
 </body>
 </html>
